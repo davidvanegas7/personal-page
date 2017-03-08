@@ -50,6 +50,32 @@
 				$('#nav a, .scrolly').scrolly(1000, x);
 
 			});
+
+			$("#contactForm").submit(function(e) {
+                e.preventDefault();
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'http://104.131.12.43:8080/sendemail.php',
+                    data: $("#contactForm").serialize(),
+                    success: function(response) {
+                        if(response=='faltan datos')
+                        {
+                            alert("Faltan Datos en el formulario");
+                        }
+                        else
+                        { 
+                            alert("Mensaje Enviado");
+                            $("#nombre").val('');
+                            $("#email").val('');
+                            $("#tema").val('');
+                            $("#message").val('');
+                        }
+                    }
+                });
+            });
+
+
 		
 	});
 
