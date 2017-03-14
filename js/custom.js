@@ -7,22 +7,36 @@ const
 
 let 
 	COUNT = Math.floor(Math.random() * (8 - 3)) + 3;
-	R1 = 100,
-	R2 = R1/2,
+	
 	ANGLE = 0,
 	SPEED = 0.5,
-	ANGLEDIFF = (360/COUNT) * (PI/180), 
-	CENTER = {
+	ANGLEDIFF = (360/COUNT) * (PI/180); 
+	var CENTER = {
 		x: 600 / 2,
 		y: 400 / 2
 	}; 
+	var R1 = 100;
+	if(window.outerWidth<600)
+	{
+		R1 = 50;
+		CENTER = {
+			x: document.getElementById("canvas_editor").offsetWidth / 2,
+			y: document.getElementById("canvas_editor").offsetHeight / 2
+		}; 
+	}
+	var R2 = R1/2;
 
 function init(){
-	/*ctx.canvas.width = window.innerWidth;
+	/*
+	ctx.canvas.width = window.innerWidth;
 	ctx.canvas.height = window.innerHeight;
 	trCtx.canvas.width = window.innerWidth;
 	trCtx.canvas.height = window.innerHeight;
 */
+	ctx.canvas.width = document.getElementById("canvas_editor").offsetWidth;
+	ctx.canvas.height = document.getElementById("canvas_editor").offsetHeight;
+	trCtx.canvas.width = document.getElementById("canvas_editor").offsetWidth;
+	trCtx.canvas.height = document.getElementById("canvas_editor").offsetHeight;
 	window.requestAnimationFrame(draw);
 }
 
