@@ -5,20 +5,24 @@ const
     trCtx = trails.getContext("2d"),
     PI = Math.PI;
 
+
 let 
-	COUNT = Math.floor(Math.random() * (8 - 3)) + 3;
-	
+	COUNT = Math.floor(Math.random() * (8 - 3)) + 3;	
 	ANGLE = 0,
 	SPEED = 0.5,
 	ANGLEDIFF = (360/COUNT) * (PI/180); 
+	if(window.outerWidth>600){
+	    canvas1.style.height = '400px';
+	    canvas1.style.width = '600px';
+	}
 	var CENTER = {
-		x: 600 / 2,
-		y: 400 / 2
+			x: document.getElementById("canvas_editor").offsetWidth / 2,
+			y: document.getElementById("canvas_editor").offsetHeight / 2
 	}; 
 	var R1 = 100;
 	if(window.outerWidth<600)
 	{
-		R1 = 50;
+		R1 = 80;
 		CENTER = {
 			x: document.getElementById("canvas_editor").offsetWidth / 2,
 			y: document.getElementById("canvas_editor").offsetHeight / 2
@@ -37,6 +41,7 @@ function init(){
 	ctx.canvas.height = document.getElementById("canvas_editor").offsetHeight;
 	trCtx.canvas.width = document.getElementById("canvas_editor").offsetWidth;
 	trCtx.canvas.height = document.getElementById("canvas_editor").offsetHeight;
+
 	window.requestAnimationFrame(draw);
 }
 

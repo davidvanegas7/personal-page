@@ -801,8 +801,9 @@
 		position: relative;
 		height: 450px;
 		text-align: left;
-	}	
+	}
 
+/*
 	@media (max-width: 700px) and (orientation: landscape) {
 		canvas{
 			padding: 0;
@@ -816,4 +817,22 @@
 		    left: 0;
 		    right: 0;
 		}	
+
+		#canvas_editor{
+		background: transparent;
+		z-index: 2;
 	}
+
+	#canvas_trail{
+		background: #ffffff;
+		z-index: 1;
+	}
+
+	.relativex{
+		position: relative;
+		height: 450px;
+		text-align: left;
+	}	
+
+	}
+*/
