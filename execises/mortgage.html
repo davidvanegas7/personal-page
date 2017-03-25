@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mortgage Underwritting Calculators</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Desarrollador Web y Movil - Enfocado en PHP, Python, Ruby y GO" />
+		<meta name="keywords" content="David, Vanegas, Developer, Desarrollador, Web, Movil, Mobile, PHP, Python, Ruby, Go, Golang" />
+		
+		<link rel="stylesheet" href="../css/mortgage.css?v=1" />
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-71528111-2', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page">
+			<div class="sub-header scrollmenu">
+				<a id="dscrandbalance" href="#DSCRandBalance" class="linked">DSCR &amp; BALANCE</a>
+				<a id="simpleunderwriting" href="#simpleUnderwriting">SIMPLE UNDERWRITING</a>
+				<a id="cashoncash" href="#cashOnCash">CASH ON CASH</a>
+				<a id="irr" href="#IRR">IRR</a>
+				<a id="maxloan" href="#maxLoan">MAX LOAN</a><a href="/calculators/debtYield">DEBT YIELD</a>
+				<a id="interestonly" href="#interestOnly">INTEREST ONLY</a>
+				<a id="mortgagecalculator" href="#mortgageCalculator">MORTGAGE CALCULATOR</a>
+				<a id="caprate" href="#capRate">CAP RATE</a><a href="/calculators/yieldMaintenance">YIELD MAINTENANCE</a>
+				<a id="reversemortgage" href="#reverseMortgage">REVERSE MORTGAGE</a>
+				<a id="standardcalculator" href="#standardCalculator">CALCULATOR</a>
+			</div>
+			<div id="div1">
+			<form class="calculator-form" _lpchecked="1">
+				<h2 class="calculator-title">DSCR and Balance</h2>
+				<h4>Calculate my monthly mortgage payments and debt-service coverage ratio</h4>
+				<div class="margin-top"></div>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="loanAmount" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">Loan Amount</label>
+					</div>
+				</div>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="interestRate" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">Initial Rate</label>
+					</div>
+				</div>
+				<br><br>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="initialTerm" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">(Initial Term) Yrs</label>
+					</div>
+				</div>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="interestOnly" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">(Interest Only) Yrs</label>
+					</div>
+				</div>
+				<br><br>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="amortizationYears" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">Amortization Years</label>
+					</div>
+				</div>
+				<p class="or">or</p>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="amortizationMonths" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">Amortization Months</label>
+					</div>
+				</div>
+				<br><br>
+				<div class="formatted-input-container">
+					<div class="mui-textfield mui-textfield--float-label ">
+						<input type="text" name="annualUnderwrittenNOI" value="" class="mui--is-empty mui--is-dirty">
+						<label style="transition: 0.15s ease-out;">Annual Underwritten NOI</label>
+					</div>
+				</div>
+				</form>
+			</div>
+			<div id="div2">Div 2</div>
+		</div>
+	</body>
+
+	<script src="../js/mortgage.js?v=1"></script>
+
+</html>
