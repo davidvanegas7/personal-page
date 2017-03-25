@@ -32,7 +32,7 @@ body{
 	text-decoration: none;
 }
 
-.calculator-form{
+#div1{
 	margin: 25px auto;
     width: 85%;
     border-radius: 5px;
@@ -45,4 +45,37 @@ body{
     padding-left: 20px;
     padding-bottom: 15px;
     float: left;
+    display: flex;
+}
+
+.calculator-form{
+	width: 60%;
+}
+
+
+#boxes{
+	width: 40%;
+}
+
+.mui-textfield label, .box-title{
+	font-weight: bold;
+}
+
+.formatted-input-container .mui-textfield{
+	display: table-caption;
+}
+
+.formatted-input-container{
+    display: inline;
+    width: 50%;
+    text-align: center;
+}
+
+.or{
+	width: 5%;
+	display: inline;
+}
+
+.hidden{
+	display: none;
 }

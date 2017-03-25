@@ -46,57 +46,87 @@
 				<h4>Calculate my monthly mortgage payments and debt-service coverage ratio</h4>
 				<div class="margin-top"></div>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="loanAmount" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">Loan Amount</label>
+						<input type="text" name="loanAmount" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
+				<p class="or"> </p>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="interestRate" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">Initial Rate</label>
+						<input type="text" name="interestRate" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
 				<br><br>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="initialTerm" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">(Initial Term) Yrs</label>
+						<input type="text" name="initialTerm" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
+				<p class="or"> </p>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="interestOnly" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">(Interest Only) Yrs</label>
+						<input type="text" name="interestOnly" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
 				<br><br>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="amortizationYears" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">Amortization Years</label>
+						<input type="text" name="amortizationYears" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
 				<p class="or">or</p>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="amortizationMonths" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">Amortization Months</label>
+						<input type="text" name="amortizationMonths" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
 				<br><br>
 				<div class="formatted-input-container">
-					<div class="mui-textfield mui-textfield--float-label ">
-						<input type="text" name="annualUnderwrittenNOI" value="" class="mui--is-empty mui--is-dirty">
+					<div class="mui-textfield">
 						<label style="transition: 0.15s ease-out;">Annual Underwritten NOI</label>
+						<input type="text" name="annualUnderwrittenNOI" value="" class="mui--is-empty mui--is-dirty">
 					</div>
 				</div>
 				</form>
+				<div id="boxes">
+					<p class="hidden"><i class="material-icons">share</i><!-- react-text: 187 -->Share Calculations<!-- /react-text --></p>
+					<div class="box">
+					<p class="box-title">Monthly Payments</p>
+					<p class="amount">
+						<span class="display-value" name="monthlyPaymentsAmortizationPeriod">$0</span>
+					</p>
+					</div>
+					<div class="box">
+						<p class="box-title">Annual Payments</p>
+						<p class="amount">
+							<span class="display-value" name="annualPaymentsAmortizationPeriod">$0</span>
+						</p>
+					</div>
+					<div class="box orange">
+						<p class="box-title">Balance at Maturity</p>
+						<p class="amount">
+							<span class="display-value" name="balanceAtMaturity">$0</span>
+						</p>
+					</div>
+					<div class="box orange">
+						<p class="box-title">Debt Service Coverage Ratio</p>
+						<p class="amount">
+							<span class="display-value" name="debtServiceCoverageRatio">0</span>
+						</p>
+					</div>
+				</div>
 			</div>
 			<div id="div2">Div 2</div>
 		</div>
 	</body>
 
 	<script src="../js/mortgage.js?v=1"></script>
+	<!--<script src="alldata.js?v=1"></script>-->
 
 </html>
